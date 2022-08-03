@@ -1,0 +1,49 @@
+{
+  "rpcx-add-date-md": {
+    "prefix": "rpcx-add-date-md",
+    "body": [
+      "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+    ],
+    "description": "rpcx-add-date-md"
+  },
+  "rpcx-add-log": {
+    "prefix": "rpcx-add-log",
+    "body": [
+      "`[$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND] : ${1:create new project}`",
+      ": _${2:membuat project baru dengan create react app}_",
+      "$0"
+    ],
+    "description": "rpcx-add-log"
+  },
+  "@ts-ignore": {
+    "prefix": "@ts-ignore",
+    "body": [
+      "//@ts-ignore"
+    ],
+    "description": "rpcx-add-log"
+  },
+  "@comment-todo": {
+    "prefix": "@comment-todo",
+    "body": [
+      "//************************************************",
+      "//${1|TODO,FIXME,TEST,BUG,HACK,XXX,[?],[x],[o]|} : ${2:description}",
+      "//************************************************",
+      "${0}"
+    ],
+    "description": "@comment-todo"
+  },
+  "@comment-tag": {
+    "prefix": "@comment-tag",
+    "body": [
+      "/* ${1:TITLE} : ${2:description} */ ${0}"
+    ],
+    "description": "@comment-tag"
+  },
+  "@console-log": {
+    "prefix": "@console-log",
+    "body": [
+      "console.log('${1:abcd}', ${1:abcd})"
+    ],
+    "description": "@console-log"
+  }
+}
