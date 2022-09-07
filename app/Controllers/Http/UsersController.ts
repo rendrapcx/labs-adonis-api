@@ -3,8 +3,8 @@ import { schema, rules } from '@ioc:Adonis/Core/Validator'
 import User from 'App/Models/User'
 
 export default class UsersController {
-  public async index({ response }: HttpContextContract) {
-    const welcome = 'Welcome'
+  public async index({ response, auth }: HttpContextContract) {
+    const welcome = 'Welcome, ' + auth.user!.username
     return response.json(welcome)
   }
 
