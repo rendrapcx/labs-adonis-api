@@ -1,5 +1,6 @@
 # Adonis-api
 > labs belajar API dengan adonis dan sebagai referensi pembelajaran lainnya
+
 ## After Clone
 - install node package
 
@@ -9,21 +10,39 @@ npm install
 # npm ci
 ```
 
+- rename `.env.example` dan modif nama database, user, dan password 
+
 - generate key
 ```bash
 node ace generate:key
 ```
 
+- node ace migration:run / node ace migration:fresh
+
+- node ace db:seed
+
+- node ace serve
+
+- node ace list:routes
+
+- open insomnia/postman
+    - localhost:3333/api/v1/login
+        - admin
+        - password
+
+
+
+
 ## Project Notes
 > Catatan pembelajaran
 
 ## TODO
-- [ ] install @adonisjs/lucid
-  - [ ] configure @adonisjs/lucid
-- [ ] install @adonisjs/auth
-  - [ ] configure @adonisjs/auth
-- [ ] install @adonisjs/phc-argon2
-- [ ] install @adonisjs/mysql2
+- [x] install @adonisjs/lucid
+  - [x] configure @adonisjs/lucid
+- [x] install @adonisjs/auth
+  - [x] configure @adonisjs/auth
+- [x] install @adonisjs/phc-argon2
+- [x] install @adonisjs/mysql2
 
 ## LOGS
 
